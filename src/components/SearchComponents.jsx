@@ -12,7 +12,7 @@ const SearchComponents=()=>{
   const[loading,setLoading]=useState("")
   const[error,setError]=useState(false)
   const[products,setProducts]=useState([])
-  const image_url="http://lovendro.alwaysdata.net/static/images/"
+  const image_url="https://lovendro.alwaysdata.net/static/images/"
   const navigate=useNavigate()
   const[search,setSearch]=useState("")
   
@@ -29,7 +29,7 @@ const SearchComponents=()=>{
     const data=new FormData()
     data.append("product_name",search)
 
-    const response=await axios.get("http://lovendro.alwaysdata.net/api/getproductsdetails",data)
+    const response=await axios.get("https://lovendro.alwaysdata.net/api/getproductsdetails",data)
     setLoading("");
     if (response.data && response.data.length >0) {
       

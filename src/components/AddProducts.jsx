@@ -26,7 +26,7 @@ const AddProducts = () => {
       data.append("product_cost",product_cost)
       data.append("product_photo",product_photo)
 
-      const response=await axios.post("http://lovendro.alwaysdata.net/api/addproducts",data)
+      const response=await axios.post("https://lovendro.alwaysdata.net/api/addproducts",data)
       setLoading("")
       setSuccess(response.data.message)
       setProductname("")

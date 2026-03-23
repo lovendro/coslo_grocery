@@ -6,7 +6,7 @@ const MpesaComponent = () => {
   const[loading,setLoading]=useState("")
   const[success,setSuccess]=useState("")
   const[error,setError]=useState("")
-  const image_url="http://lovendro.alwaysdata.net/static/images/"
+  const image_url="https://lovendro.alwaysdata.net/static/images/"
   
 
   const[phone,setPhone]=useState("")
@@ -24,7 +24,7 @@ const MpesaComponent = () => {
       data.append("amount",product.product_cost)
 
 
-      const response=await axios.post("http://lovendro.alwaysdata.net/api/mpesa_payment",data)
+      const response=await axios.post("https://lovendro.alwaysdata.net/api/mpesa_payment",data)
       setLoading("")
       setSuccess(response.message)
       

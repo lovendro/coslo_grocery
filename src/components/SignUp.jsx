@@ -27,7 +27,7 @@ const SignUp = () => {
     data.append("password",password)
 
     // call our api
-    const response=await axios.post("http://lovendro.alwaysdata.net/api/signup",data)
+    const response=await axios.post("https://lovendro.alwaysdata.net/api/signup",data)
     setLoading("")
     setSuccess(response.data.message)
 

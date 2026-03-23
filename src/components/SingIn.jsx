@@ -22,7 +22,7 @@ const SignIn = () => {
           data.append("email" || "username",email)
           data.append("password",password)
 
-          const response=await axios.post("http://lovendro.alwaysdata.net/api/signin",data)
+          const response=await axios.post("https://lovendro.alwaysdata.net/api/signin",data)
           setLoading("");
           // check if the response has user item
           if(response.data.user){

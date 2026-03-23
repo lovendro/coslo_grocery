@@ -9,7 +9,7 @@ const GetProducts = () => {
   const[loading,setLoading]=useState("")
   const[error,setError]=useState("")
   const[products,setProducts]=useState([])
-  const image_url="http://lovendro.alwaysdata.net/static/images/"
+  const image_url="https://lovendro.alwaysdata.net/static/images/"
   const navigate=useNavigate()
  
 
@@ -19,7 +19,7 @@ const GetProducts = () => {
   const fetchproducts=async()=>{
     setLoading("please wait as we retrieve your products")
     try {
-      const response=await axios.get("http://lovendro.alwaysdata.net/api/getproductsdetails")
+      const response=await axios.get("https://lovendro.alwaysdata.net/api/getproductsdetails")
       console.log("The response is",response);
       
       setProducts(response.data)

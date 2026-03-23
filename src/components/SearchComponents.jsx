@@ -123,7 +123,7 @@ const SearchComponents=()=>{
                   <div className='card-body'>
                     <h5 className='text-success'>{product.product_name}</h5>
                     <p className='text-dark'>{product.product_description}</p>
-                    <p className='text-secondary'>{product.product_cost}</p>
+                    <p className='text-secondary'>Ksh.{product.product_cost}</p>
                     <input type="button" className='btn btn-secondary w-100' value='Purchase now' onClick={()=>navigate("/mpesa",{state:{product}})}/>
       
                   </div>

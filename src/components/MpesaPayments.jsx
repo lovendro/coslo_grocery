@@ -49,7 +49,7 @@ const MpesaComponent = () => {
          <img src={image_url + product.product_photo} alt="shoe" className='product_img'/>
         <p className='text-success'>{product.product_name}</p>
         <p className='text-dark'>{product.product_description}</p>
-        <p className='text-secondary'>{product.product_cost}</p>
+        <p className='text-secondary'>Ksh.{product.product_cost}</p>
 
         <p className='text-warning'>{loading}</p>
         <p className='text-success'>{success}</p>
